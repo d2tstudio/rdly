@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="37px" height="40px" viewBox="0 0 37 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>brick_white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="brick_white" sketch:type="MSLayerGroup" fill="#FFFFFF">
+            <path d="M34.8795406,9.14739492 L20.0647523,0.850318338 C19.1625132,0.344915418 17.6857434,0.344915418 16.783184,0.850318338 L1.96911647,9.14739492 C1.06695747,9.65349709 0.328011963,10.8940457 0.328011963,11.9050846 L0.328011963,28.0952262 C0.328011963,29.1064982 1.06695747,30.3474352 1.96911647,30.8521389 L16.783184,39.1498371 C17.6857434,39.6551623 19.1625132,39.6551623 20.0647523,39.1498371 L34.8795406,30.8521389 C35.7817796,30.3460367 36.5206451,29.1056436 36.5206451,28.0949154 L36.5206451,11.9050069 C36.5207252,10.8940457 35.7817796,9.65349709 34.8795406,9.14739492 L34.8795406,9.14739492 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
