@@ -1,9 +1,9 @@
 Meteor.methods
-  loadEntriesByTag: ->
+  loadEntriesByTag: (token) ->
     @unblock()
     Meteor.http.call "GET", "https://sandbox.feedly.com/v3/markers/tags",
       headers:
-        'Authorization': 'Bearer ' + Meteor.user().services.feedly.accessToken
+        'Authorization': 'Bearer ' + token
 
   loadEntries: (arr) ->
     @unblock()
@@ -12,3 +12,7 @@ Meteor.methods
         'Content-type': 'application/json',
       data:
         arr
+
+  updateUserTags: (obj) ->
+    Meteor.users.update obj.user,
+      $set: {'profile.tags': obj.tags}

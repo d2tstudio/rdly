@@ -2,9 +2,9 @@ template(name="tabs")
   .bs-component
     ul.nav.nav-tabs.nav-justified
       li.active
-        a(href='#home', data-toggle='tab', aria-expanded='true') Derry's Feed
+        a(href='#home', data-toggle='tab', aria-expanded='true') Currently Reading
       li
-        a(href='#profile', data-toggle='tab', aria-expanded='false') Follower Feeds
+        a(href='#profile', data-toggle='tab', aria-expanded='false') Followers are reading
 
     #myTabContent.tab-content
       #home.tab-pane.fade.active.in
@@ -12,11 +12,8 @@ template(name="tabs")
 
       #profile.tab-pane.fade
         p
-          | Food truck fixie locavore, accusamus mcsweeney&apos;s marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.
+          | Follower feeds is coming soon. Food truck fixie locavore, accusamus mcsweeney&apos;s marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.
 
 template(name="myFeed")
   .myfeed
-    if currentUser
-      +entries
-    else
-      +loginButtons(align="right")
+    +entries

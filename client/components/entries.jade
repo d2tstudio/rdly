@@ -1,8 +1,10 @@
 template(name="entries")
   .entries.list-view
-      p.small #{totalEntries} new - 4 unread
-      ul
-      each entry
-        li.entry
-          strong #{title}
-          | by #{author}
+      if hasLoaded
+        p.small #{totalEntries} new - 4 unread
+        each entry
+          .entry.col-md-8.col-md-offset-2
+            h4 #{title}
+            p by #{author}
+      else 
+        +spinner
