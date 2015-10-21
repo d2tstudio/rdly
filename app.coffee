@@ -4,6 +4,10 @@ if Meteor.isClient
       tag: ->
           myEntries = Entries.find()
 
+    Template.userCard.helpers
+      user: ->
+        Meteor.user()
+
     Template.entries.helpers
       entry: ->
           myEntries = Entries.find().fetch()

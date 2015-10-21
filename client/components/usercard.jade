@@ -1,0 +1,13 @@
+template(name="userCard")
+  .user-card
+    with user
+      img.img-circle.avatar(src="#{services.feedly.picture}")
+      h3 #{services.feedly.givenName} #{services.feedly.familyName}
+      p.lead UX, UI, Smart City, APIs, IoT, Startups
+
+    .follow
+      ul.pager
+        li
+          a Follow
+        li
+          a Subscribe

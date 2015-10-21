@@ -1,0 +1,28 @@
+template(name="layout")
+  +navbar
+  +yield
+  .row
+    .container
+      +footer
+
+template(name="welcome")
+  .welcome
+    +userCard
+
+template(name="newsletter")
+  .newsletter
+    form
+      .row
+        .col-md-6
+          input#inputEmail.form-control(type='text', placeholder='Email')
+        .col-md-6
+          submit.btn.btn-lg.btn-primary Subscribe
+
+template(name="tags")
+  .tags
+    p #{hello}
+    ul
+    each tag
+      .tag
+        li #{entry_id}, #{tagged}
+    
